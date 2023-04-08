@@ -1,0 +1,25 @@
+name: fcnd_new
+channels:
+    - defaults
+    - conda-forge
+    - brenda
+dependencies:
+    - python==3.6.3
+    - pip
+    - numpy
+    - matplotlib
+    - jupyter
+    - lxml
+    - pyserial
+    - websockets
+    - utm
+    - scipy
+    - setuptools_scm
+    - tomli
+    - visdom 
+    - pip:
+        - scipy
+        - git+https://github.com/udacity/udacidrone.git
+        - pymavlink
+        - bresenham==0.2
+        - msgpack==0.5.6
