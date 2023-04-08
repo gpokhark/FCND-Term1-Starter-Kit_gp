@@ -67,6 +67,10 @@ I created a dockerfile to create docker image with Ubuntu 18.04 and miniconda 4.
   ```bash
   docker run --network host -it -v /path/on/host:/path/in/container <my-image-name>
   ```
+- You can use the `-v` option multiple times to mount multiple paths from your local PC to a single container. Here is an example command to mount two directories:
+  ```bash
+  docker run --network host -it -v /path/to/local/dir1:/mount/path/dir1 -v /path/to/local/dir2:/mount/path/dir2 my-image-name
+  ```
 - Once inside the container source the environment
   ```bash
   source activate fcnd_new
