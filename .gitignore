@@ -185,6 +185,3 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks
-
-# docker container creating scripts
-create_container.sh
