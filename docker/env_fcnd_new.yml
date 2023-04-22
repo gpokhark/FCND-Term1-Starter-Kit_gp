@@ -17,6 +17,7 @@ dependencies:
     - setuptools_scm
     - tomli
     - visdom 
+    - scikit-image
     - pip:
         - scipy
         - git+https://github.com/udacity/udacidrone.git
