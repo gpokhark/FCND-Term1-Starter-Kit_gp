@@ -13,10 +13,11 @@ ENV PATH /opt/conda/bin:$PATH
 COPY env_fcnd_new.yml /
 RUN conda env create -f env_fcnd_new.yml -v
 
-# CMD ["source activate fcnd_1"]
+COPY entrypoint.sh /
+
+RUN conda install conda-build -y
+RUN ./entrypoint.sh
+RUN conda info --envs
 
 # Expose ports for jupyter notebook
 EXPOSE 8888/tcp
-
-# start the jupyter notebook in server mode
-#CMD ["jupyter","notebook","--ip=0.0.0.0","--port=8888","--no-browser","--allow-root", "--notebook-dir=/notebooks"]
