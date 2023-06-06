@@ -17,6 +17,9 @@ dependencies:
     - tomli
     - visdom 
     - scikit-image
+    - shapely
+    - scikit-learn
+    - networkx==2.1
     - pip:
         - scipy
         - git+https://github.com/udacity/udacidrone.git
